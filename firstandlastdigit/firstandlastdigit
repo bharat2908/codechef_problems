@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class firstandlastdigit {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int T =sc.nextInt();
+        for(int j=0;j<T;j++){
+//            int n=sc.nextInt();
+//            int [] array = new int[100];
+//            int i=0;
+//            while (n!=0){
+//                array[i] = n%10;
+//                n = n/10;
+//                i++;
+//            }
+//            int sum;
+//            sum = array[0]+array[i-1];
+//            System.out.println(sum);
+            int n=sc.nextInt();
+            int last,sum = 0,rem,ans;
+            last = n%10;
+            while(n>0){
+                sum = 0;
+                rem = n%10;
+                sum = sum+rem;
+                n=n/10;
+            }
+            ans = last+sum;
+            System.out.println(ans);
+
+        }
+    }
+}
